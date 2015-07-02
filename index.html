@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
   </head>
   <body>
+    <div id="editor">
+      <textarea v-model="input"></textarea>
+      <div v-html="input | marked"></div>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
